@@ -36,13 +36,17 @@ var chart = new Chart(ctx, {
 
   options: {
     title: {
-      text: "Protocol Fees",
+      text: "Protocol Earned Fees",
       display: true,
-      position: 'bottom',
+      position: 'top',
       fontColor: 'green',
       fontStyle: 'bold',
       fontSize: 20,
       padding: 5,
+    },
+    legend: {
+      display: true,
+      position: 'bottom'
     }
   }
 
