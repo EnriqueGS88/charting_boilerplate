@@ -16,12 +16,43 @@ const chartBackground = {
     const ctx = chart.canvas.getContext('2d');
     ctx.save();
     ctx.globalCompositeOperation = 'destination-over';
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = 'rgb(15,15,15)';
     ctx.fillRect( 29, 35, chart.width-42, chart.height-96 );
     ctx.restore();
   }
 };
 
+
+var options = {
+  title: {
+    text: "Daily Fees Earned by DeFi Protocols - USD",
+    display: true,
+    position: 'top',
+    fontColor: 'white',
+    fontStyle: 'bold',
+    fontSize: 20,
+    padding: 5,
+  },
+  legend: {
+    display: true,
+    position: 'bottom'
+  },
+  maintainAspectRation: false,
+  scales: {
+    y: {
+      stacked: true,
+      grid: {
+        display: true,
+        color: 'rgba(255,99,132,0.2)'
+      },
+    x: {
+      grid: {
+        display: false
+        }
+      }
+    }
+  }
+}
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
@@ -49,21 +80,8 @@ var chart = new Chart(ctx, {
   ]},
 
   plugins: [chartBackground],
+
+  options: options
   
-  options: {
-    title: {
-      text: "Protocol Earned Fees Daily",
-      display: true,
-      position: 'top',
-      fontColor: 'green',
-      fontStyle: 'bold',
-      fontSize: 20,
-      padding: 5,
-    },
-    legend: {
-      display: true,
-      position: 'bottom'
-    }
-  }
 
 });
