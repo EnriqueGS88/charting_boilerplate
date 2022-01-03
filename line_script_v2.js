@@ -4,6 +4,8 @@ const uniColor = 'rgb(255, 99, 132)';
 const uniBorder = 'rgb(255, 99, 132)';
 const sushiBorder = 'rgba(215, 31, 126, 0.8)';
 const sushiColor = 'rgba(215, 31, 126, 0.8)';
+
+// Axis and Data Arrays 
 const myLabels = ["January", "February", "March", "April", "May", "June", "July"];
 const myData = [0, 10, 15, 20, 25, 30, 35];
 const myData2 = [5, 15, 20, 17, 28, 29, 40];
@@ -82,6 +84,5 @@ var chart = new Chart(ctx, {
   plugins: [chartBackground],
 
   options: options
-  
 
 });
