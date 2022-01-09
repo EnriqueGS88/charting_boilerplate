@@ -93,6 +93,8 @@ const jsonFile = {
       { date: '2021-12-18', fee: 1753552 },
       { date: '2021-12-21', fee: 4203942 }
     ],
-    spookyswapData: [ { date: '2021-12-18', fee: 596660 } ],
-    quickswapData: [ { date: '2021-12-19', fee: 420549 } ]
+    spookyswapData: [ 
+      { date: '2021-12-18', fee: 596660 } ],
+    quickswapData: [ 
+      { date: '2021-12-19', fee: 420549 } ]
   }
